@@ -131,7 +131,7 @@ with col2:
     else:
         st.info("Write a journal entry on the left to see your real-time emotion vector visualization.")
 
----
+
 st.subheader("📜 Historical Metrics & Analytics Dashboard")
 # Always fetch and refresh data log view from SQLite
 df_logs = db.fetch_dashboard_data()
