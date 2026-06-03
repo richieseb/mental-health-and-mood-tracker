@@ -142,7 +142,7 @@ if not df_logs.empty:
         color = 'background-color: #ffcccc; color: black;' if val == 1 else ''
         return color
 
-    styled_df = df_logs.style.applymap(highlight_burnout, subset=['burnout_flag'])
+    styled_df = df_logs.style.map(highlight_burnout, subset=['burnout_flag'])
     st.dataframe(styled_df, use_container_width=True)
 else:
     st.write("No historical records found. Start journaling above to populate your timeline.")
